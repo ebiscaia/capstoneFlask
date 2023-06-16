@@ -15,3 +15,6 @@ class Blogs(db.Model):
     quote = db.Column(db.Text)
     photo1 = db.Column(db.Text)
     photo2 = db.Column(db.Text)
+
+    def __repr__(self):
+        return f"Blog: {self.id} - {self.slug}"
