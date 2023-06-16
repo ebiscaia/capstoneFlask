@@ -1,0 +1,51 @@
+<!-- {% extends 'index.html' %} -->
+<!---->
+<!-- {% block content %} -->
+<!---->
+<!-- <div class="create-blog content"> -->
+<!--   <h3>New Article</h3> -->
+<!--   <!-- <form action="/blogs" method="POST" id="blog" enctype="multipart/form-data"> --> -->
+<!--   <!--   {{ form.hidden_tag() }} --> -->
+<!--   <!--   <h4>Items market with (*) are mandatory</h4> --> -->
+<!--   <!--   {{ form.headline.label() }} --> -->
+<!-- </div> -->
+<!---->
+<!-- {% endblock %} -->
+
+{% extends 'index.html' %}
+
+{% block content %}
+
+<div class="about content">
+  <h2>About this page:</h2>
+  <p>This is a personal project to convert my Capstone Project from NodeJS to Flask</p>
+</div>
+
+{% endblock %}
+
+
+<!-- <html lang="en"> -->
+<!-- <%- include('./partials/head.ejs') %> -->
+<!---->
+<!--   <div class="create-blog content"> -->
+<!--     <h3>New Article</h3> -->
+<!--     <form action="/blogs" method="POST" id="blog" enctype="multipart/form-data"> -->
+<!--       <h4>Items market with (*) are mandatory</h4> -->
+<!--       <label for="slug">Slug*</label> -->
+<!--       <input type="text" id="slug" name="slug" required /> -->
+<!--       <label for="headline">Headline*</label> -->
+<!--       <input type="text" id="headline" name="headline" required /> -->
+<!---->
+<!--       <label for="lead">Lead</label> -->
+<!--       <input id="lead" name="lead" type="text" class="hidden"></input> -->
+<!--       <div id="editorLead" contenteditable="true"> -->
+<!--       </div> -->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!---->
+<!--       <form action="" method="post"> -->

@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
+body {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  font-family: 'Noto Serif', serif;
+  max-width: 1200px;
+  background-color: aliceblue;
+}
+p,
+h1,
+h2,
+h3,
+a,
+ul {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  color: #222;
+}
+/* nav & footer styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  text-transform: uppercase;
+}
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+nav li {
+  list-style-type: none;
+  margin-left: 20px;
+}
+nav h1 {
+  font-size: 3em;
+}
+
+nav p,
+nav a {
+  color: #777;
+  font-weight: 300;
+}
+footer {
+  color: #777;
+  text-align: center;
+  margin: 80px auto 20px;
+}
+h2 {
+  margin-bottom: 40px;
+}
+h3 {
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+.content {
+  margin-left: 20px;
+}
+
+.blogs a {
+  display: block;
+  margin: 40px;
+  padding-left: 30px;
+  border-left: 6px solid firebrick;
+}
+
+.blogs a:hover h3 {
+  color: firebrick;
+}
+
+.details {
+  position: relative;
+}
+
+.delete,
+.edit {
+  position: absolute;
+  top: 1px;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.delete {
+  right: 10px;
+}
+
+.edit {
+  right: 80px;
+}
+
+.delete:hover,
+.edit:hover {
+  cursor: pointer;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0.2, 0.2);
+}
+
+.create-blog form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.create-blog input,
+.create-blog textarea {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+  background-color: #ffffff00;
+  border-radius: 3px;
+  border-width: 1px;
+}
+
+.create-blog .hidden {
+  opacity: 0;
+  width: 0;
+  float: left;
+}
+
+.create-blog label {
+  display: block;
+  margin-top: 24px;
+}
+
+.create-blog #submit {
+  display: block;
+  width: unset;
+  margin-top: 10px;
+  background: crimson;
+  color: white;
+  padding: 8px;
+  border: 0;
+  font-size: 1.2em;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Noto Serif', serif;
+}
+
+div .ql-toolbar.ql-snow {
+  width: 618px;
+  padding: 8px;
+  margin: 10px 0px 0px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border: 1px solid #000;
+}
+
+div #editorDetail01,
+div #editorDetail02,
+div #editorDetail03,
+div #editorConclusion,
+div #editorBrief,
+div #editorLead {
+  width: 618px;
+  padding: 8px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+  border: 1px solid #000;
+  border-top-width: 0px;
+  margin-bottom: 15px;
+  font-family: 'Noto Serif', serif;
+  font-size: 11px;
+}
+
+.red {
+  color: firebrick;
+}
+.photo {
+  max-width: 100%;
+  width: 900px;
+}

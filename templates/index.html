@@ -1,0 +1,52 @@
+<!-- set ft=htmldjango -->
+<!DOCTYPE html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='main.css') }}">
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='python.png') }}">
+
+  {% if title %}
+  <title>Capstone Blog - {{ title }}</title>
+  {% else %}
+  <title>Capstone Blog</title>
+  {% endif %}
+
+</head>
+
+<body>
+  <nav>
+    <div class="site-title">
+      <a href="/">
+        <h1>CapStone Final Project Blog</h1>
+      </a>
+      <p>A learners website</p>
+    </div>
+    <ul>
+      <li>
+        <a href=' {{ url_for("home") }}'>Blogs</a>
+      </li>
+      <li>
+        <a href=' {{ url_for("about") }}'>About</a>
+      </li>
+      <li>
+        <a href='{{ url_for("create") }}'>New Article</a>
+      </li>
+    </ul>
+  </nav>
+
+  {% block content %}{% endblock %}
+
+</body>
+
+<footer>
+  <p>Created by Eduardo Biscaia de Queiroz. All rights reserved</p>
+</footer>
+
+</html>

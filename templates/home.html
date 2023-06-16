@@ -1,0 +1,25 @@
+{% extends 'index.html' %}
+{% block content %}
+
+<div class="blogs content">
+  {% with messages = get_flashed_messages(with_categories=false) %}
+  {% if messages %}
+  {% for message in messages %}<h5>{{ message }}</h5>{% endfor %}
+  {% endif %}
+  {% endwith %}
+  <h2>All articles</h2>
+
+  {% if blogs %}
+  {% for blog in blogs %}
+  <a href="#" class="single">
+    <h3 class="title content">{{ blog.title }}</h3>
+    <p class="snippet content">{{ blog.snippet }}</p>
+  </a>
+  {% endfor %}
+  {% else %}
+  <h3>There are no posts to be shown now.</h3>
+  {% endif %}
+
+</div>
+
+{% endblock %}
