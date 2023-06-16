@@ -2,54 +2,54 @@
 
 {% block content %}
 
-<div class="create-blog content">
-  <h3>{{ legend }}</h3>
-  <form action="" method="POST" id="blog" enctype="multipart/form-data">
-    {{ form.hidden_tag() }}
-    <h4>Items market with (*) are mandatory</h4>
+  <div class="create-blog content">
+    <h3>{{ legend }}</h3>
+    <form action="" method="POST" id="blog" enctype="multipart/form-data">
+      {{ form.hidden_tag() }}
+      <h4>Items market with (*) are mandatory</h4>
 
 
 
 
-    {{ form.headline.label }}
-    {{ form.headline }}
+      {{ form.headline.label }}
+      {{ form.headline }}
 
-    {{ form.lead.label }}
-    {{ form.lead }}
+      {{ form.lead.label }}
+      {{ form.lead }}
 
-    {{ form.brief.label }}
-    {{ form.brief }}
+      {{ form.brief.label }}
+      {{ form.brief }}
 
-    {{ form.brief.label }}
-    {{ form.brief }}
+      {{ form.brief.label }}
+      {{ form.brief }}
 
-    {{ form.linkBrief.label }}
-    {{ form.linkBrief }}
+      {{ form.linkBrief.label }}
+      {{ form.linkBrief }}
 
-    {{ form.detail01.label }}
-    {{ form.detail01 }}
+      {{ form.detail01.label }}
+      {{ form.detail01 }}
 
-    {{ form.detail02.label }}
-    {{ form.detail02 }}
+      {{ form.detail02.label }}
+      {{ form.detail02 }}
 
-    {{ form.quote.label }}
-    {{ form.quote }}
+      {{ form.quote.label }}
+      {{ form.quote }}
 
-    {{ form.detail03.label }}
-    {{ form.detail03 }}
+      {{ form.detail03.label }}
+      {{ form.detail03 }}
 
-    {{ form.conclusion.label }}
-    {{ form.conclusion }}
+      {{ form.conclusion.label }}
+      {{ form.conclusion }}
 
-    {{ form.photo1.label }}
-    {{ form.photo1 }}
+      {{ form.photo1.label }}
+      {{ form.photo1 }}
 
-    {{ form.photo2.label }}
-    {{ form.photo2 }}
+      {{ form.photo2.label }}
+      {{ form.photo2 }}
 
 
-    {{ form.submit(id='submit') }}
-  </form>
-</div>
+      {{ form.submit(id='submit') }}
+    </form>
+  </div>
 
 {% endblock %}
