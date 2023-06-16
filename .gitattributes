@@ -1,2 +1,3 @@
 #pattern  filter=crypt diff=crypt merge=crypt
-secret.yaml filter=crypt diff=crypt merge=crypt
+config.yaml filter=crypt diff=crypt merge=crypt
+ 
